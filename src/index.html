@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="magnifying-glass.svg">
+    <link rel="icon" href="/assets/images/magnifying-glass.svg">
     
     <title>Multi-Search Engine</title>
 </head>
@@ -51,52 +51,7 @@
         <form class="youtubeform"  target="_blank" action="http://www.youtube.com/search" method="GET">
         <input  type="hidden" name="q" value />
         </form>
-        <script language="JavaScript">
-            var engine = "google";
-
-            $('.google').click(function(){
-                if( $('.duckduckgo').hasClass('clicked') || $('.youtube').hasClass('clicked')) {
-                    $('.duckduckgo').removeClass('clicked');
-                    $('.youtube').removeClass('clicked');
-                }                
-                $('.google').toggleClass('clicked');
-            });
-            
-            $('.youtube').click(function(){
-                if( $('.duckduckgo').hasClass('clicked') || $('.google').hasClass('clicked')) {
-                    $('.duckduckgo').removeClass('clicked');
-                    $('.google').removeClass('clicked')
-                }                
-                $('.youtube').toggleClass('clicked');
-            });
-
-            $('.duckduckgo').click(function(){
-                if( $('.youtube').hasClass('clicked') || $('.google').hasClass('clicked')) {
-                    $('.youtube').removeClass('clicked');
-                    $('.google').removeClass('clicked')
-                }                
-                $('.duckduckgo').toggleClass('clicked');
-            });
-
-
-            
-            
-
-            function selectEngine(eng) {
-                        engine = eng;
-                        console.log(engine);
-                    }
-
-            function makeSearch() {
-              var search = document.querySelector(`.${engine}form`);
-              var searchText = search.firstElementChild.value;
-              search.firstElementChild.value = document.myForm.SearchText.value;  
-              search.submit();
-              console.log(document.myForm.SearchText.value);
-            }
-
-           
-        </script>
+        <script src="main.js"></script>
 
         
     
