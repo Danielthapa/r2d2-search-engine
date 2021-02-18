@@ -7,3 +7,5 @@ A webpage working as a single search engine for several websites. Purpose of thi
 ![r2d2 Screenshot](https://github.com/Danielthapa/r2d2-search-engine/blob/master/r2d2-search.jpeg?raw=true)
 
 
+![r2d2 gif](https://github.com/Danielthapa/r2d2-search-engine/blob/master/r2d2gif.gif?raw=true)
+
